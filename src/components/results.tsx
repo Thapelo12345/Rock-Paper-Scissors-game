@@ -5,35 +5,35 @@ import ClickableSelector from "./clickable";
 const selectionItems = [
   {
     title: "scissors",
-    iconUrl: `/images/icon-scissors.svg`,
+    iconUrl: `${import.meta.env.BASE_URL}images/icon-scissors.svg`,
     borderColor: `hsl(39,89%,49%)`,
     shadowColor: "hsl(28, 76%, 44%)",
   },
 
   {
     title: "spock",
-    iconUrl: `/images/icon-spock.svg`,
+    iconUrl: `${import.meta.env.BASE_URL}images/icon-spock.svg`,
     borderColor: `hsl(189, 59%, 53%)`,
     shadowColor: "hsl(194, 58%, 42%)",
   },
 
   {
     title: "paper",
-    iconUrl: `/images/icon-paper.svg`,
+    iconUrl: `${import.meta.env.BASE_URL}images/icon-paper.svg`,
     borderColor: `hsl(230,89%,62%)`,
     shadowColor: "hsl(229, 64%, 46%)",
   },
 
   {
     title: "lizard",
-    iconUrl: `/images/icon-lizard.svg`,
+    iconUrl: `${import.meta.env.BASE_URL}images/icon-lizard.svg`,
     borderColor: `hsl(261,73%,60%)`,
     shadowColor: "hsl(261, 51%, 44%)",
   },
 
   {
     title: "rock",
-    iconUrl: `/images/icon-rock.svg`,
+    iconUrl: `${import.meta.env.BASE_URL}images/icon-rock.svg`,
     borderColor: `hsl(349,71%,52%)`,
     shadowColor: "hsl(347, 75%, 35%)",
   },

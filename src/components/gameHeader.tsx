@@ -11,8 +11,8 @@ export default function GameHeader() {
         <img
           src={
             bonus
-              ? "../../public/images/logo-bonus.svg"
-              : "../../public/images/logo.svg"
+              ? `${import.meta.env.BASE_URL}images/logo-bonus.svg`
+              : `${import.meta.env.BASE_URL}images/logo.svg`
           }
           style={{ width: "70%", height: "auto" }}
           alt="Logo Icon"

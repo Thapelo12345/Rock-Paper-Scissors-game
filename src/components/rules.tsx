@@ -18,7 +18,7 @@ export default function Rules({ setShowRules }: PROP) {
         onClick={() => setShowRules(false)}
         >
           <img
-            src="../../public/images/icon-close.svg"
+            src={`${import.meta.env.BASE_URL}images/icon-close.svg`}
             style={{ width: "75%", height: "75%" }}
           />
         </button>
@@ -26,8 +26,8 @@ export default function Rules({ setShowRules }: PROP) {
       <img
         src={
           bonus
-            ? "../../public/images/image-rules-bonus.svg"
-            : "../../public/images/image-rules.svg"
+            ? `${import.meta.env.BASE_URL}images/image-rules-bonus.svg`
+            : `${import.meta.env.BASE_URL}images/image-rules.svg`
         }
       />
 
@@ -35,7 +35,7 @@ export default function Rules({ setShowRules }: PROP) {
       onClick={() => setShowRules(false)}
       >
         <img
-            src="../../public/images/icon-close.svg"
+            src={`${import.meta.env.BASE_URL}images/icon-close.svg`}
             style={{ width: "85%", height: "85%" }}
           />
       </button>

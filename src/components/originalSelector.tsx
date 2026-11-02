@@ -6,14 +6,14 @@ export default function OriginalSelector() {
       <div className="flex flex-row items-center justify-center gap-15 w-full">
         <ClickableSelector
           iconValue={"paper"}
-          iconUrl={`/images/icon-paper.svg`}
+          iconUrl={`${import.meta.env.BASE_URL}images/icon-paper.svg`}
           borderColor={`hsl(230,89%,62%)`}
           shadowColor="hsl(229, 64%, 46%)"
         />
 
         <ClickableSelector
           iconValue={"scissors"}
-          iconUrl={`/images/icon-scissors.svg`}
+          iconUrl={`${import.meta.env.BASE_URL}images/icon-scissors.svg`}
           borderColor={`hsl(39,89%,49%)`}
           shadowColor="hsl(28,76%,44%)"
         />
@@ -21,7 +21,7 @@ export default function OriginalSelector() {
 
       <ClickableSelector
         iconValue={"rock"}
-        iconUrl={`/images/icon-rock.svg`}
+        iconUrl={`${import.meta.env.BASE_URL}images/icon-rock.svg`}
         borderColor={`hsl(349,71%,52%)`}
         shadowColor="hsl(347, 75%, 35%)"
       />
