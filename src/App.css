@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: Barlow Semi  Condensed;
+  background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 48%, 15%));
+  overflow-x: hidden;
+}
+
+.header-title {
+  @apply text-lg m-0 text-white -my-[10px];
+  padding: -5px;
+  font-weight: 600;
+  overflow-x: hidden;
+}
+
+.score {
+  @apply text-4xl text-[hsl(237,48%,15%)];
+  font-weight: 700;
+}
+
+.selected-icons {
+  @apply flex flex-col items-center justify-evenly w-70 h-70;
+
+  h4 {
+    @apply text-white text-sm font-light;
+  }
+}
+
+.winner::before {
+  content: "";
+  position: absolute;
+  inset: -3.7rem;
+  background-color: hsl(229, 25%, 31%);
+  opacity: 0.4;
+  width: calc(100% + 120px);
+  height: calc(100% + 120px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.winner::after {
+  content: "";
+  position: absolute;
+  inset: -5.5rem;
+  background-color: hsl(239, 25%, 31%);
+  opacity: 0.4;
+  width: calc(100% + 180px);
+  height: calc(100% + 180px);
+  border-radius: 50%;
+  box-shadow: 
+    0 0 0 0.04rem rgb(31, 45, 78), 
+    0 0 0 1rem rgb(31, 45, 78), 
+    0 0 0 2.7rem rgb(31, 45, 78);
+  z-index: -1;
+}
+
+.background-shape {
+  position: absolute;
+  width: 220px;
+  height: 215px;
+  z-index: -10;
+}
+
